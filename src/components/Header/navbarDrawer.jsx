@@ -2,16 +2,26 @@ import { useEffect, useRef, useState } from "react";
 import Bars, { Cross } from "./Bars";
 import StarBg from "../StarBg";
 import anime from "animejs";
+import monarch from "../../assets/Monarch-side-pic.png";
 
 export default function NavDrawer() {
   const [isOpen, setIsOpen] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const NavDrawerRef = useRef(null);
+  const monarchRef = useRef(null);
 
   useEffect(() => {
     if (isOpen) {
       setIsDrawerOpen(true);
+      anime({
+        targets: monarchRef.current,
+        translateX: ["-20%","0"],
+        delay: 300,
+        duration: 2000,
+        easing: "cubicBezier(.23,1,.32,1)",
+      });
+
       anime({
         targets: NavDrawerRef.current,
         translateX: 0,
@@ -21,6 +31,7 @@ export default function NavDrawer() {
     }
 
     if (!isOpen) {
+      monarchRef.current.classList.remove("monarch-bg-pic");
       const t1 = anime.timeline({
         duration: 800,
         easing: "cubicBezier(.23,1,.32,1)",
@@ -39,24 +50,37 @@ export default function NavDrawer() {
     }
 
     return () => {
-      anime.remove(NavDrawerRef.current);
+      // anime.remove(NavDrawerRef.current);
     };
   }, [isOpen]);
 
   return (
     <div className="flex w-full flex-row justify-end">
       <div className="z-50">
-        <button onClick={() => setIsOpen(!isOpen)}>
+        <button className="" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <Cross /> : <Bars />}
         </button>
       </div>
 
       <div
-        className={`absolute left-0 z-40 h-full w-screen translate-x-[-100%] overflow-hidden bg-black ${isDrawerOpen ? "flex" : "hidden"}`}
+        className={`absolute left-0 top-0 z-40 h-screen w-screen translate-x-[-100%] bg-black ${isDrawerOpen ? "flex" : "hidden"}`}
         ref={NavDrawerRef}
       >
         <StarBg />
-        <div className="text-9xl text-white">Picture</div>
+        {/* Menu items  */}
+        <div className="relative h-screen w-full flex-row">
+          <div className="h-full p-1">
+            <img
+              src={monarch}
+              ref={monarchRef}
+              alt="Monarch"
+              className="max-h-screen w-112 mix-blend-screen"
+            />
+          </div>
+          <div className="flex w-full flex-col justify-start text-white">
+            <div>Menu</div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -2,10 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Impact";
+  src:
+    url("assets/Impact.woff2") format("woff2"),
+    url("assets/Impact.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  @font-face {
+    font-family: "Impact";
+    src:
+      url("assets/Impact.woff2") format("woff2"),
+      url("assets/Impact.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
 html {
   height: 100%;
   background: radial-gradient(ellipse at bottom, #000000 0%, #000000 100%);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* #stars {
@@ -547,12 +569,12 @@ html {
     1152px 371px #fff,
     592px 555px #fff,
     1251px 956px #fff;
-  animation: animStar 150s linear infinite;
+  animation: animStar 20s linear infinite;
 }
 #stars3:after {
   content: " ";
   position: absolute;
-  top: 2000px;
+  top: 100vh;
   width: 3px;
   height: 3px;
   background: transparent;
@@ -664,12 +686,12 @@ html {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-2000px);
+    transform: translateY(-100vh);
   }
 }
 
 body {
-  animation: fadeIn 1.5s linear;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -691,7 +713,6 @@ body {
   height: 1px;
   background-color: hsla(0, 0%, 100%, 0.4);
   overflow: hidden;
-  overflow-x: hidden;
 }
 
 .headerbarsContainer span::before,
@@ -758,3 +779,4 @@ body {
     transform: translateX(0);
   }
 }
+

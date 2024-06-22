@@ -8,10 +8,9 @@ function AppLayout() {
       <StarBg />
       <div className="z-10 m-9 flex flex-col">
         <Header />
-        <div className="relative flex w-full overflow-hidden transition-all">
+        <div className="flex w-screen">
           <main className="m-auto">
             <Outlet />
-            <h1 className="text-9xl text-pink-600">Void Monarch</h1>
           </main>
         </div>
       </div>
