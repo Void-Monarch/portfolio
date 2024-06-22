@@ -20,13 +20,13 @@ Before starting, ensure you have [Node.js](https://nodejs.org/en/download/) inst
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/yourusername/your-portfolio.git
+    git clone https://github.com/Void-Monarch/portfolio.git
     ```
 
 2. **Navigate to the project directory**:
 
     ```bash
-    cd your-portfolio
+    cd portfolio
     ```
 
 3. **Install dependencies**:
