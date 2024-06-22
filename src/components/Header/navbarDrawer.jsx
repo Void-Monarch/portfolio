@@ -16,7 +16,7 @@ export default function NavDrawer() {
       setIsDrawerOpen(true);
       anime({
         targets: monarchRef.current,
-        translateX: ["-20%","0"],
+        translateX: ["-20%", "0"],
         delay: 300,
         duration: 2000,
         easing: "cubicBezier(.23,1,.32,1)",
@@ -56,7 +56,7 @@ export default function NavDrawer() {
 
   return (
     <div className="flex w-full flex-row justify-end">
-      <div className="z-50">
+      <div className="fixed z-50">
         <button className="" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <Cross /> : <Bars />}
         </button>

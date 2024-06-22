@@ -2,7 +2,7 @@ import NavDrawer from "./navbarDrawer";
 
 export default function Header() {
   return (
-    <div className="flex flex-row">
+    <div className="">
       <NavDrawer/>
     </div>
   );
