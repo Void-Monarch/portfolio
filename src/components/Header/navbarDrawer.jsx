@@ -67,18 +67,27 @@ export default function NavDrawer() {
         ref={NavDrawerRef}
       >
         <StarBg />
-        {/* Menu items  */}
+
         <div className="relative h-screen w-full flex-row">
           <div className="h-full p-1">
             <img
               src={monarch}
               ref={monarchRef}
               alt="Monarch"
-              className="max-h-screen w-112 mix-blend-screen"
+              className="max-h-screen w-96 mix-blend-screen"
             />
           </div>
-          <div className="flex w-full flex-col justify-start text-white">
-            <div>Menu</div>
+          {/* Menu items  */}
+          <div className="absolute top-0 flex h-full w-full items-center justify-center text-white">
+            <div className="">
+              <div>Menu</div>
+              <div>Menu</div>
+              <div>Menu</div>
+              <div>Menu</div>
+              <div>Menu</div>
+              <div>Menu</div>
+              <div>Menu</div>
+            </div>
           </div>
         </div>
       </div>

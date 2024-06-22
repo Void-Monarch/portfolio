@@ -2,8 +2,8 @@ import NavDrawer from "./navbarDrawer";
 
 export default function Header() {
   return (
-    <div className="">
-      <NavDrawer/>
+    <div>
+      <NavDrawer />
     </div>
   );
 }

@@ -8,7 +8,7 @@ function AppLayout() {
       <StarBg />
       <div className="z-10 m-9 flex flex-col">
         <Header />
-        <div className="flex w-screen">
+        <div className="flex w-full">
           <main className="m-auto">
             <Outlet />
           </main>

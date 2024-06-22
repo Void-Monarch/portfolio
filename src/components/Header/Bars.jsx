@@ -9,10 +9,10 @@ export default function Bars() {
 }
 
 export function Cross() {
-  return(
+  return (
     <div className="headerbarsContainer relative h-6 w-[38px]">
-      <span className="headerBar rotate-[45deg] translate-y-[10px]"></span>
-      <span className="headerBar rotate-[-45deg] translate-y-[10px]"></span>
+      <span className="headerBar translate-y-[10px] rotate-[45deg]"></span>
+      <span className="headerBar translate-y-[10px] rotate-[-45deg]"></span>
     </div>
-  )
+  );
 }
