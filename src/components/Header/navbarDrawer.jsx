@@ -69,7 +69,7 @@ export default function NavDrawer() {
         <StarBg />
 
         <div className="relative h-screen w-full flex-row">
-          <div className="h-full p-1">
+          <div className="h-full py-1">
             <img
               src={monarch}
               ref={monarchRef}
@@ -79,14 +79,24 @@ export default function NavDrawer() {
           </div>
           {/* Menu items  */}
           <div className="absolute top-0 flex h-full w-full items-center justify-center text-white">
-            <div className="">
-              <div>Menu</div>
-              <div>Menu</div>
-              <div>Menu</div>
-              <div>Menu</div>
-              <div>Menu</div>
-              <div>Menu</div>
-              <div>Menu</div>
+            <div className="w-[650px] pt-[70px]">
+              <ul className="font-RobotoCondensed text-3xl">
+                <li>
+                  <span>PROFILE</span>
+                </li>
+                <li>
+                  <span>TECH STACK</span>
+                </li>
+                <li>
+                  <span>PROJECTS</span>
+                </li>
+                <li>
+                  <span>CONTACT</span>
+                </li>
+                <li>
+                  <span></span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

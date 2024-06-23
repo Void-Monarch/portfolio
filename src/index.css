@@ -12,12 +12,33 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Roboto Condensed";
+  src:
+    url("RobotoCondensed-Regular.woff2") format("woff2"),
+    url("RobotoCondensed-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   @font-face {
     font-family: "Impact";
     src:
       url("assets/Impact.woff2") format("woff2"),
       url("assets/Impact.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+@layer base {
+  @font-face {
+    font-family: "Roboto Condensed";
+    src:
+      url("RobotoCondensed-Regular.woff2") format("woff2"),
+      url("RobotoCondensed-Regular.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;

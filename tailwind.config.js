@@ -7,6 +7,7 @@ export default {
     extend: {
       fontFamily: {
         impact: "Impact",
+        RobotoCondensed: "Roboto Condensed",
       },
       colors: {
         mainpink: "#ff2c60ed",
