@@ -49,7 +49,7 @@ export default function NavDrawer() {
       t1.add({
         targets: NavDrawerRef.current,
         translateX: "-100%",
-        duration: 10,
+        duration: 1,
       });
     }
 
