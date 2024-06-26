@@ -4,6 +4,9 @@ import StarBg from "../StarBg";
 import anime from "animejs";
 import monarch from "../../assets/Monarch-side-pic.png";
 import { Link } from "react-router-dom";
+import github from "../../assets/github_logo.png";
+import insta from "../../assets/insta_logo.png";
+import linkedin from "../../assets/linedin_logo.png";
 
 export default function NavDrawer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -80,31 +83,52 @@ export default function NavDrawer() {
           </div>
           {/* Menu items  */}
           <div className="absolute top-0 flex h-full w-full items-center justify-center text-white">
-            <div className="relative w-[650px] pt-[40px]">
-              <ul className="menuItems *:hover:scale-x-1 font-RobotoCondensed text-2xl *:relative *:my-8 lg:text-4xl lg:*:my-16">
-                <li className="hover:text-mainpinkog">
+            <div className="relative md:w-[650px] md:pt-[40px]">
+              <ul className="menuItems flex flex-col justify-around font-RobotoCondensed text-4xl *:relative *:my-8">
+                <li className="hover:text-mainpinkog my-4 cursor-pointer">
                   <Link to="/">
-                    <span>PROFILE</span>
+                    <span className="relative z-10 bg-black pr-2">PROFILE</span>
                   </Link>
                 </li>
-                <li className="hover:text-mainpinkog">
+                <li className="hover:text-mainpinkog my-4 cursor-pointer">
                   <Link to="/techstack">
-                    <span>TECH STACK</span>
+                    <span className="relative z-10 bg-black pr-2">
+                      TECH STACK
+                    </span>
                   </Link>
                 </li>
-                <li className="hover:text-mainpinkog">
+                <li className="hover:text-mainpinkog my-4 cursor-pointer">
                   <Link to="/projects">
-                    <span>PROJECTS</span>
+                    <span className="relative z-10 bg-black pr-2">
+                      PROJECTS
+                    </span>
                   </Link>
                 </li>
-                <li className="hover:text-mainpinkog">
+                <li className="hover:text-mainpinkog my-4 cursor-pointer">
                   <Link to="/contact">
-                    <span>CONTACT</span>
+                    <span className="relative z-10 bg-black pr-2">CONTACT</span>
                   </Link>
                 </li>
-                <li className="hover:text-mainpinkog">
+                <li className="hover:text-mainpinkog my-4 cursor-pointer">
                   <Link to="/hobbies">
-                    <span>HOBBIES</span>
+                    <span className="relative z-10 bg-black pr-2">HOBBIES</span>
+                  </Link>
+                </li>
+              </ul>
+              <ul className="flex flex-row justify-center pt-10 *:me-8 md:justify-start md:pt-0">
+                <li>
+                  <Link to="https://github.com/Void-Monarch" target="_blank">
+                    <img src={github} alt="github" className="w-10" />
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact">
+                    <img src={insta} alt="instagram" className="w-10" />
+                  </Link>
+                </li>
+                <li>
+                  <Link to="https://www.linkedin.com/in/harsh-parashar-54112024b/" target="_blank">
+                    <img src={linkedin} alt="linkedin" className="w-10" />
                   </Link>
                 </li>
               </ul>

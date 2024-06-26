@@ -469,3 +469,7 @@ body {
   transform-origin: left;
   transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
 }
+
+.menuItems li:hover::before {
+  transform: scaleX(1);
+}
