@@ -11,6 +11,7 @@ export default {
       },
       colors: {
         mainpink: "#ff2c60ed",
+        mainpinkog: "#ff2c60",
       },
       spacing: {
         112: "28rem",

@@ -64,7 +64,7 @@ export default function NavDrawer() {
       </div>
 
       <div
-        className={`absolute left-0 top-0 z-40 h-screen w-screen translate-x-[-100%] bg-black ${isDrawerOpen ? "flex" : "hidden"}`}
+        className={`absolute left-0 top-0 z-40 h-screen w-screen translate-x-[-100%] overflow-hidden bg-black ${isDrawerOpen ? "flex" : "hidden"}`}
         ref={NavDrawerRef}
       >
         <StarBg />
@@ -79,25 +79,33 @@ export default function NavDrawer() {
             />
           </div>
           {/* Menu items  */}
-          <div className="absolute top-0 flex h-full w-full items-center justify-center py-10 text-white">
-            <div className="relative h-full w-[650px] pt-[70px]">
-              <ul className="font-RobotoCondensed text-5xl *:py-14">
-                <li>
-                  <Link to="/profile">
+          <div className="absolute top-0 flex h-full w-full items-center justify-center text-white">
+            <div className="relative w-[650px] pt-[40px]">
+              <ul className="menuItems *:hover:scale-x-1 font-RobotoCondensed text-2xl *:relative *:my-8 lg:text-4xl lg:*:my-16">
+                <li className="hover:text-mainpinkog">
+                  <Link to="/">
                     <span>PROFILE</span>
                   </Link>
                 </li>
-                <li>
-                  <span>TECH STACK</span>
+                <li className="hover:text-mainpinkog">
+                  <Link to="/techstack">
+                    <span>TECH STACK</span>
+                  </Link>
                 </li>
-                <li>
-                  <span>PROJECTS</span>
+                <li className="hover:text-mainpinkog">
+                  <Link to="/projects">
+                    <span>PROJECTS</span>
+                  </Link>
                 </li>
-                <li>
-                  <span>CONTACT</span>
+                <li className="hover:text-mainpinkog">
+                  <Link to="/contact">
+                    <span>CONTACT</span>
+                  </Link>
                 </li>
-                <li>
-                  <span></span>
+                <li className="hover:text-mainpinkog">
+                  <Link to="/hobbies">
+                    <span>HOBBIES</span>
+                  </Link>
                 </li>
               </ul>
             </div>
