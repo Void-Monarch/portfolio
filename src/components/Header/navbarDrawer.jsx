@@ -67,18 +67,18 @@ export default function NavDrawer() {
       </div>
 
       <div
-        className={`absolute left-0 top-0 z-40 h-screen w-screen translate-x-[-100%] overflow-hidden bg-black ${isDrawerOpen ? "flex" : "hidden"}`}
+        className={`absolute left-0 top-0 z-40 h-dvh w-screen translate-x-[-100%] overflow-hidden bg-black ${isDrawerOpen ? "flex" : "hidden"}`}
         ref={NavDrawerRef}
       >
         <StarBg />
 
-        <div className="relative h-screen w-full flex-row">
+        <div className="relative h-dvh w-full flex-row">
           <div className="h-full py-1">
             <img
               src={monarch}
               ref={monarchRef}
               alt="Monarch"
-              className="max-h-screen w-96 mix-blend-screen"
+              className="max-h-dvh w-96 mix-blend-screen"
             />
           </div>
           {/* Menu items  */}
@@ -127,7 +127,10 @@ export default function NavDrawer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="https://www.linkedin.com/in/harsh-parashar-54112024b/" target="_blank">
+                  <Link
+                    to="https://www.linkedin.com/in/harsh-parashar-54112024b/"
+                    target="_blank"
+                  >
                     <img src={linkedin} alt="linkedin" className="w-10" />
                   </Link>
                 </li>
