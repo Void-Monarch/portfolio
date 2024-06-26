@@ -3,6 +3,7 @@ import Bars, { Cross } from "./Bars";
 import StarBg from "../StarBg";
 import anime from "animejs";
 import monarch from "../../assets/Monarch-side-pic.png";
+import { Link } from "react-router-dom";
 
 export default function NavDrawer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -78,11 +79,13 @@ export default function NavDrawer() {
             />
           </div>
           {/* Menu items  */}
-          <div className="absolute top-0 flex h-full w-full items-center justify-center text-white">
-            <div className="w-[650px] pt-[70px]">
-              <ul className="font-RobotoCondensed text-3xl">
+          <div className="absolute top-0 flex h-full w-full items-center justify-center py-10 text-white">
+            <div className="relative h-full w-[650px] pt-[70px]">
+              <ul className="font-RobotoCondensed text-5xl *:py-14">
                 <li>
-                  <span>PROFILE</span>
+                  <Link to="/profile">
+                    <span>PROFILE</span>
+                  </Link>
                 </li>
                 <li>
                   <span>TECH STACK</span>
