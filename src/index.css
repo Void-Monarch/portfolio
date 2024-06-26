@@ -473,3 +473,17 @@ body {
 .menuItems li:hover::before {
   transform: scaleX(1);
 }
+
+@media (max-width: 650px) {
+  #main_pic {
+    width: 436%;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  #main_pic {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-width: none;
+    width: 130%;
+  }
+}
