@@ -38,7 +38,7 @@ export default function Center_element() {
               </div>
             </div>
             <div className="mb-4 flex flex-col">
-              <div className="text-sm text-gray-300">FIND MY WAY</div>
+              <div className="text-sm text-gray-300">FARMKART</div>
               <div className="flex w-full flex-row">
                 <img src={farmkart} className="w-20 rounded-md p-1" />
                 <div className="text-sm sm:text-sm">
@@ -50,18 +50,20 @@ export default function Center_element() {
               </div>
             </div>
             <div className="mb-4 flex flex-col">
-              <div className="text-sm text-gray-300">FIND MY WAY</div>
+              <div className="text-sm text-gray-300">
+                INVENTORY MANAGEMENT SYSTEM
+              </div>
               <div className="flex w-full flex-row">
                 <img src={ims} className="w-20 rounded-md p-1" />
                 <div className="text-sm sm:text-sm">
-                  The Information Management System (IMS) is a web-based
+                  The Inventory Management System (IMS) is a web-based
                   application designed to streamline data management and product
                   cataloging for businesses.
                 </div>
               </div>
             </div>
             <div className="mb-4 flex flex-col">
-              <div className="text-sm text-gray-300">FIND MY WAY</div>
+              <div className="text-sm text-gray-300">RESTRO SERVER</div>
               <div className="flex w-full flex-row">
                 <img src={workser} className="w-20 rounded-md p-1" />
                 <div className="text-sm sm:text-sm">
