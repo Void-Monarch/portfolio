@@ -15,9 +15,12 @@ export default function Scroll_down() {
   }, []);
 
   return (
-    <div className="sm:relative sm:mt-4 sm:w-full" id="Scroll_down_div-1">
+    <div
+      className="select-none sm:relative sm:mt-4 sm:w-full"
+      id="Scroll_down_div-1"
+    >
       <div
-        className="flex overflow-hidden sm:justify-center sm:ml-0 ml-[-6px]"
+        className="ml-[-6px] flex overflow-hidden sm:ml-0 sm:justify-center"
         id="Scroll_down_div-2"
       >
         <div
