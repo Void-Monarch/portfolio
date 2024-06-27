@@ -18,11 +18,11 @@ export default function Profile_tag() {
     <div className="mt-0 flex w-full justify-center sm:mt-28">
       <Link to="/profile">
         <div
-          className="relative flex w-52 justify-center border border-solid border-white py-3 opacity-0 hover:border-mainpinkog *:hover:text-mainpinkog"
+          className="relative flex w-[65vw] justify-center border border-solid border-white py-4 opacity-0 hover:border-mainpinkog *:hover:text-mainpinkog sm:w-52 sm:py-3"
           id="profiletag"
           ref={profiletagRef}
         >
-          <span className="font-RobotoCondensed text-sm text-white">
+          <span className="items-center font-RobotoCondensed text-lg sm:text-sm text-white">
             PROFILE
           </span>
         </div>

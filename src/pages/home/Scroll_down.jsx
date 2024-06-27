@@ -16,7 +16,7 @@ export default function Scroll_down() {
 
   return (
     <div
-      className="select-none sm:relative sm:mt-4 sm:w-full"
+      className="select-none sm:relative sm:mt-8 sm:w-full"
       id="Scroll_down_div-1"
     >
       <div
@@ -30,7 +30,7 @@ export default function Scroll_down() {
           SCROLL DOWN
         </div>
       </div>
-      <div className="relative mt-3 h-[50px]" id="Scroll_down_div-3">
+      <div className="relative mt-3 h-[70px]" id="Scroll_down_div-3">
         <span id="scrollLine"></span>
       </div>
     </div>

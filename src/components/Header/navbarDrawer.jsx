@@ -17,6 +17,7 @@ export default function NavDrawer() {
 
   useEffect(() => {
     if (isOpen) {
+      
       setIsDrawerOpen(true);
       anime({
         targets: monarchRef.current,
@@ -35,6 +36,7 @@ export default function NavDrawer() {
     }
 
     if (!isOpen) {
+      
       monarchRef.current.classList.remove("monarch-bg-pic");
       const t1 = anime.timeline({
         duration: 800,

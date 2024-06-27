@@ -6,10 +6,10 @@ function AppLayout() {
   return (
     <>
       <StarBg />
-      <div className="z-10 m-9 flex flex-col">
+      <div className="z-10 m-4 sm:m-9 flex flex-col">
         <Header />
-        <div className="flex w-full">
-          <main className="mx-auto">
+        <div className="w-full">
+          <main className="sm:mx-auto">
             <Outlet />
           </main>
         </div>
