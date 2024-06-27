@@ -2,8 +2,6 @@ import { Outlet } from "react-router-dom";
 import StarBg from "./StarBg";
 import Header from "./Header/Header";
 
-import RobotoCondendensed from "../fonts/RobotoCondensed-Regular.woff";
-
 function AppLayout() {
   return (
     <>
