@@ -32,8 +32,6 @@
     font-style: normal;
     font-display: swap;
   }
-}
-@layer base {
   @font-face {
     font-family: "Roboto Condensed";
     src:
