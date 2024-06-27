@@ -368,6 +368,7 @@ html {
 
 body {
   animation: fadeIn 1s ease-in-out;
+  scroll-behavior: smooth;
 }
 
 @keyframes fadeIn {
