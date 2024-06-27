@@ -3,6 +3,7 @@ import farmkart from "../../assets/Farmkart.png";
 import ims from "../../assets/ims.png";
 import workser from "../../assets/coding-workshop-concept-illustration.png";
 import Tag_glow_button from "../../components/Tag_glow_button";
+import { Link } from "react-router-dom";
 
 export default function Center_element() {
   return (
@@ -75,10 +76,14 @@ export default function Center_element() {
               </div>
             </div>
           </ul>
-          <Tag_glow_button text="MORE" />
+          <Link to="https://github.com/Void-Monarch?tab=repositories">
+            <Tag_glow_button text="MORE" />
+          </Link>
         </div>
       </div>
+
       {/* SENCOND COLUMN */}
+
       <div className="m-0 flex w-full flex-col sm:w-[46.5%]">
         <div className="font-RobotoCondensed text-white">
           <h2 className="flex w-full flex-row justify-between">
@@ -87,7 +92,7 @@ export default function Center_element() {
                 STACK
               </span>
             </div>
-            <div className="relative w-[70%]">
+            <div className="relative w-[65%]">
               <div className="lines">
                 <span className="hori hori-1"></span>
                 <span className="hori hori-2"></span>
@@ -97,6 +102,57 @@ export default function Center_element() {
               </div>
             </div>
           </h2>
+          <ul className="my-5 mt-8 font-RobotoCondensed text-white">
+            <div className="mb-4 flex flex-col">
+              <div className="text-sm text-gray-300">FIND MY WAY</div>
+              <div className="flex w-full flex-row">
+                <img src={findmyway1} className="w-20 rounded-md p-1" />
+                <div className="text-sm sm:text-sm">
+                  Find My Way is a dynamic web application built using Node.js,
+                  a powerful JavaScript runtime, renowned for its efficiency and
+                  scalability in building server-side applications.
+                </div>
+              </div>
+            </div>
+            <div className="mb-4 flex flex-col">
+              <div className="text-sm text-gray-300">FARMKART</div>
+              <div className="flex w-full flex-row">
+                <img src={farmkart} className="w-20 rounded-md p-1" />
+                <div className="text-sm sm:text-sm">
+                  FarmKart is a user-friendly e-commerce website designed to
+                  bridge the gap between farmers and consumers. It provides a
+                  marketplace to sell their fresh produce and agricultural
+                  products directly to customers.
+                </div>
+              </div>
+            </div>
+            <div className="mb-4 flex flex-col">
+              <div className="text-sm text-gray-300">
+                INVENTORY MANAGEMENT SYSTEM
+              </div>
+              <div className="flex w-full flex-row">
+                <img src={ims} className="w-20 rounded-md p-1" />
+                <div className="text-sm sm:text-sm">
+                  The Inventory Management System (IMS) is a web-based
+                  application designed to streamline data management and product
+                  cataloging for businesses.
+                </div>
+              </div>
+            </div>
+            <div className="mb-4 flex flex-col">
+              <div className="text-sm text-gray-300">RESTRO SERVER</div>
+              <div className="flex w-full flex-row">
+                <img src={workser} className="w-20 rounded-md p-1" />
+                <div className="text-sm sm:text-sm">
+                  This Node.js server serves as the backend for an online food
+                  ordering application. The app is designed to cater to the food
+                  needs of university students, allowing them to conveniently
+                  order food from local vendors
+                </div>
+              </div>
+            </div>
+          </ul>
+          <Tag_glow_button text="MORE" />
         </div>
       </div>
     </div>
