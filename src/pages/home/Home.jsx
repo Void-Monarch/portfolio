@@ -9,8 +9,6 @@ export default function Home() {
         alt="monarch"
         className="w-[90%] max-w-[1100px]"
       />
-      <br />
-      <h1 className="font-RobotoCondensed text-3xl text-white">Hello</h1>
     </div>
   );
 }
