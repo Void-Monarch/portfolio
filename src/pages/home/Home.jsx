@@ -1,14 +1,15 @@
-import monarch from "../../assets/Monarch-main-pic.png";
+import Main_bg from "./Main_bg";
+import Profile_tag from "./Profile_tag";
+import Scroll_down from "./Scroll_down";
 
 export default function Home() {
   return (
-    <div className="flex justify-center pt-64">
-      <img
-        src={monarch}
-        id="main_pic"
-        alt="monarch"
-        className="w-[90%] max-w-[1100px]"
-      />
+    <div className="flex flex-col justify-center">
+      <div className="flex flex-col justify-center">
+        <Main_bg />
+        <Profile_tag />
+        <Scroll_down />
+      </div>
     </div>
   );
 }

@@ -85,31 +85,31 @@ export default function NavDrawer() {
           <div className="absolute top-0 flex h-full w-full items-center justify-center text-white">
             <div className="relative md:w-[650px] md:pt-[40px]">
               <ul className="menuItems flex flex-col justify-around font-RobotoCondensed text-4xl *:relative *:my-8">
-                <li className="hover:text-mainpinkog my-4 cursor-pointer">
+                <li className="my-4 cursor-pointer hover:text-mainpinkog">
                   <Link to="/">
                     <span className="relative z-10 bg-black pr-2">PROFILE</span>
                   </Link>
                 </li>
-                <li className="hover:text-mainpinkog my-4 cursor-pointer">
+                <li className="my-4 cursor-pointer hover:text-mainpinkog">
                   <Link to="/techstack">
                     <span className="relative z-10 bg-black pr-2">
                       TECH STACK
                     </span>
                   </Link>
                 </li>
-                <li className="hover:text-mainpinkog my-4 cursor-pointer">
+                <li className="my-4 cursor-pointer hover:text-mainpinkog">
                   <Link to="/projects">
                     <span className="relative z-10 bg-black pr-2">
                       PROJECTS
                     </span>
                   </Link>
                 </li>
-                <li className="hover:text-mainpinkog my-4 cursor-pointer">
+                <li className="my-4 cursor-pointer hover:text-mainpinkog">
                   <Link to="/contact">
                     <span className="relative z-10 bg-black pr-2">CONTACT</span>
                   </Link>
                 </li>
-                <li className="hover:text-mainpinkog my-4 cursor-pointer">
+                <li className="my-4 cursor-pointer hover:text-mainpinkog">
                   <Link to="/hobbies">
                     <span className="relative z-10 bg-black pr-2">HOBBIES</span>
                   </Link>
@@ -122,7 +122,7 @@ export default function NavDrawer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact">
+                  <Link to="https://www.instagram.com/harsh_cypher/">
                     <img src={insta} alt="instagram" className="w-10" />
                   </Link>
                 </li>

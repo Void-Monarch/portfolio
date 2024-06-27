@@ -367,7 +367,7 @@ html {
 }
 
 body {
-  animation: fadeIn 1.5s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -474,7 +474,7 @@ body {
   transform: scaleX(1);
 }
 
-@media (max-width: 650px) {
+@media (max-width: 640px) {
   #main_pic {
     width: 436%;
     transform: translate(-50%, -50%) rotate(90deg);
@@ -485,5 +485,89 @@ body {
     top: 50%;
     max-width: none;
     width: 130%;
+  }
+  #Scroll_down_div-1 {
+    position: absolute;
+    left: 5vw;
+    bottom: 0;
+    font-size: 3vw;
+  }
+  #Scroll_down_div-2 {
+    line-height: 1;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    padding-right: 6px;
+  }
+  #Scroll_down_div-3 {
+    height: 20vw;
+    width: 1px;
+    margin-left: 6px;
+  }
+}
+
+#profiletag::before {
+  content: "";
+  border: 2px solid #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 106%;
+  height: 120%;
+  filter: blur(8px);
+  background-color: hsla(0, 0%, 100%, 0.04);
+  opacity: 0;
+}
+
+#profiletag:hover::before {
+  border-color: #ff2c60;
+  background-color: rgba(255, 44, 96, 0.1);
+  opacity: 1;
+}
+
+#scrollLine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform: translateY(-100%);
+}
+
+#scrollLine::before {
+  animation: line-data-v-29a08202 3s 0.5s infinite;
+}
+
+#scrollLine {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 0;
+  height: 100%;
+  width: 1px;
+  overflow: hidden;
+}
+
+@keyframes line-data-v-29a08202 {
+  0% {
+    transform: translateY(-100%);
+    -webkit-animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  }
+  90% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(100%);
   }
 }

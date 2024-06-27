@@ -4,10 +4,13 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div className="flex flex-row justify-evenly">
-      <div>
-        <Link to="/">
+    <div className="flex flex-row justify-between">
+      <div className="fixed">
+        <Link to="/" className="flex flex-row justify-start">
           <img src={logo} className="h-8" />
+          <span className="self-end text-nowrap font-impact text-xl text-mainpinkog ms-1 hidden md:block ">
+            VOID MONARCH
+          </span>
         </Link>
       </div>
       <NavDrawer />
