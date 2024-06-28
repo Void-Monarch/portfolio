@@ -69,7 +69,7 @@ export default function NavDrawer() {
       </div>
 
       <div
-        className={`absolute left-0 top-0 z-40 h-dvh w-screen translate-x-[-100%] overflow-hidden bg-black ${isDrawerOpen ? "flex" : "hidden"}`}
+        className={`fixed  left-0 top-0 z-40 h-dvh w-screen translate-x-[-100%] overflow-hidden bg-black ${isDrawerOpen ? "flex" : "hidden"}`}
         ref={NavDrawerRef}
       >
         <StarBg />
