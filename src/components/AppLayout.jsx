@@ -1,12 +1,13 @@
 import { Outlet } from "react-router-dom";
 import StarBg from "./StarBg";
 import Header from "./Header/Header";
+import Footer from "./Footer";
 
 function AppLayout() {
   return (
     <>
       <StarBg />
-      <div className="z-10 m-4 sm:m-9 flex flex-col">
+      <div className="z-10 m-4 flex flex-col sm:m-9">
         <Header />
         <div className="w-full">
           <main className="sm:mx-auto">
@@ -14,6 +15,7 @@ function AppLayout() {
           </main>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
