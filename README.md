@@ -8,7 +8,7 @@ The Design idea for this website comes from [Yoasobi Website](https://www.yoasob
 
 ## 🎨 Preview
 
-![Portfolio Preview](https://voidmonarch.vercel.app/)
+[Portfolio Preview](https://voidmonarch.vercel.app/)
 
 
 ## 🛠️ Installation
