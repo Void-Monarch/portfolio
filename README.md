@@ -2,7 +2,7 @@
 
 Welcome to my portfolio website! This project is built using [React](https://reactjs.org/) and [Vite](https://vitejs.dev/), providing a fast, modern, and efficient development experience.
 
-## Design Insipation 
+## Design Inspiration 
 
 The Design idea for this website comes from [Yoasobi Website](https://www.yoasobi-music.jp/) . Yaosobi is a 2 person japaneese music band that I really like. I decided to borrow their website design for my porfolio
 
