@@ -96,19 +96,20 @@ export default function Stack_preview() {
               </div>
             </div>
           </h2>
+
           <Carousel
             responsive={responsive}
             infinite={true}
             swipeable={true}
             draggable={true}
             removeArrowOnDeviceType={["tablet", "mobile"]}
-            className="my-20"
+            className="my-10"
             autoPlay={true}
             // partialVisible={true}
-            autoPlaySpeed={1000}
+            autoPlaySpeed={1500}
             centerMode={true}
             arrows={false}
-            customTransition="transition-all  duration-500"
+            customTransition="transition-all  duration-700"
             itemClass="rounded-xl p-5"
             transitionDuration={500}
           >
@@ -186,7 +187,7 @@ export default function Stack_preview() {
             </div>
           </Carousel>
 
-          <Link to="https://github.com/Void-Monarch?tab=repositories">
+          <Link to="/techstack">
             <Tag_glow_button text="MORE" className="max-w-80" />
           </Link>
         </div>
