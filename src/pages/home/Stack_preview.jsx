@@ -12,6 +12,9 @@ import reactlogo from "../../assets/react-icon.png";
 import nextlogo from "../../assets/nextlogo.webp";
 import rustlogo from "../../assets/rustlogo.webp";
 import tailwindlogo from "../../assets/tailwindlogo.jpg";
+import mongoDBlogo from "../../assets/mongologo.png";
+import dockerlogo from "../../assets/dockerlogo.png";
+import nodelogo from "../../assets/nodejs.jpg";
 
 export default function Stack_preview() {
   const lines = useRef(null);
@@ -156,6 +159,30 @@ export default function Stack_preview() {
                 className="aspect-square rounded-xl object-cover"
               />
               <h5>Rust</h5>
+            </div>
+            <div className="item text-center">
+              <img
+                src={dockerlogo}
+                alt="Image"
+                className="aspect-square rounded-xl object-cover"
+              />
+              <h5>Docker</h5>
+            </div>
+            <div className="item text-center">
+              <img
+                src={mongoDBlogo}
+                alt="Image"
+                className="aspect-square rounded-xl object-cover"
+              />
+              <h5>MongoDB</h5>
+            </div>
+            <div className="item text-center">
+              <img
+                src={nodelogo}
+                alt="Image"
+                className="aspect-square rounded-xl object-cover"
+              />
+              <h5>NodeJS</h5>
             </div>
           </Carousel>
 
