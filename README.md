@@ -51,3 +51,17 @@ yarn dev
 bun run dev
 ```
 
+## 📷 Screenshot
+
+### Destop View
+
+![image](https://github.com/Void-Monarch/portfolio/assets/102967317/bee91d73-0f62-4937-9db6-9fa1b8ddb75d)
+
+![image](https://github.com/Void-Monarch/portfolio/assets/102967317/9c989c3e-5a6b-4162-9b91-80cadbf29969)
+
+### Mobile view
+
+![image](https://github.com/Void-Monarch/portfolio/assets/102967317/fbfbd6d9-f35a-4de8-8777-2aa6e0852874)
+
+![image](https://github.com/Void-Monarch/portfolio/assets/102967317/f743ac60-39ac-4da0-b80c-bea9e22aa267)
+
