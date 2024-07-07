@@ -78,12 +78,12 @@ export default function Stack_preview() {
       <div className="m-0 flex w-full flex-col sm:w-[46.5%]">
         <div className="font-RobotoCondensed text-white">
           <h2 className="flex w-full flex-row justify-between text-nowrap">
-            <div className="w-[30%] overflow-hidden">
+            <div className="w-[40%] overflow-hidden sm:w-[30%]">
               <span className="font-RobotoCondensed text-3xl sm:text-4xl">
                 TECH STACK
               </span>
             </div>
-            <div className="relative w-[65%]">
+            <div className="relative w-[50%] sm:w-[65%]">
               <div className="lines" ref={lines}>
                 <span className="hori hori-1"></span>
                 <span className="hori hori-2"></span>
@@ -113,7 +113,7 @@ export default function Stack_preview() {
               <img
                 src={jslogo}
                 alt="Image"
-                className="aspect-square object-cover rounded-xl"
+                className="aspect-square rounded-xl object-cover"
               />
               <h5>JavaScript</h5>
             </div>
@@ -121,7 +121,7 @@ export default function Stack_preview() {
               <img
                 src={pylogo}
                 alt="Image"
-                className="aspect-square object-cover rounded-xl"
+                className="aspect-square rounded-xl object-cover"
               />
               <h5>Python</h5>
             </div>
@@ -129,7 +129,7 @@ export default function Stack_preview() {
               <img
                 src={reactlogo}
                 alt="Image"
-                className="aspect-square object-cover rounded-xl"
+                className="aspect-square rounded-xl object-cover"
               />
               <h5>React</h5>
             </div>
@@ -137,7 +137,7 @@ export default function Stack_preview() {
               <img
                 src={nextlogo}
                 alt="Image"
-                className="aspect-square object-cover rounded-xl"
+                className="aspect-square rounded-xl object-cover"
               />
               <h5>Next JS</h5>
             </div>
@@ -145,7 +145,7 @@ export default function Stack_preview() {
               <img
                 src={tailwindlogo}
                 alt="Image"
-                className="aspect-square object-cover rounded-xl"
+                className="aspect-square rounded-xl object-cover"
               />
               <h5>TailWind CSS</h5>
             </div>
@@ -153,7 +153,7 @@ export default function Stack_preview() {
               <img
                 src={rustlogo}
                 alt="Image"
-                className="aspect-square object-cover rounded-xl"
+                className="aspect-square rounded-xl object-cover"
               />
               <h5>Rust</h5>
             </div>
