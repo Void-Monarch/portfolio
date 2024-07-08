@@ -14,7 +14,7 @@ import light_novel from "../../assets/light_novel.jpg";
 
 export default function Center_element() {
   const [ref, inView] = useInView({
-    threshold: 0.15,
+    threshold: 0.10,
   });
 
   useEffect(() => {
