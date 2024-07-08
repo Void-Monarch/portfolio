@@ -12,6 +12,14 @@ export default memo(function Custom_Carousel({
   trackClass = "",
   itemClass = "",
 }) {
+  // props
+  const trackClassC = trackClass.split(" ").join(" ");
+  const itemClassC = itemClass
+    .split(" ")
+    .map((c) => `*:${c}`)
+    .join(" ");
+  const wrapperClassC = wrapperClass.split(" ").join(" ");
+
   const wrapper = useRef(null);
   const track = useRef(null);
 
@@ -55,19 +63,16 @@ export default memo(function Custom_Carousel({
     });
   }, [totalItems, cloned, animationDuration, animationEasing]);
 
+  const trackItemClass = `${itemClassC} ${trackClassC}`;
+
   return (
     <div
-      className={`flex overflow-hidden ${wrapperClass.split(" ").join(" ")}`}
+      className={"flex overflow-hidden " + wrapperClassC}
       id="wrapper"
       ref={wrapper}
     >
       <div
-        className={`flex flex-row *:flex *:flex-col xss:*:has-[img]:first:size-[16vh] sm:*:has-[img]:first:size-[15vh] md:*:has-[img]:first:size-[15vw] lg:*:has-[img]:first:size-[15vw] xl:*:has-[img]:first:size-[10vw] ${trackClass.split(" ").join(" ")} ${" "} ${itemClass
-          .split(" ")
-          .map((c) => {
-            return `*:${c}`;
-          })
-          .join(" ")} `}
+        className={`flex flex-row *:flex *:flex-col xss:*:has-[img]:first:size-[16vh] sm:*:has-[img]:first:size-[15vh] md:*:has-[img]:first:size-[15vw] lg:*:has-[img]:first:size-[15vw] xl:*:has-[img]:first:size-[10vw] ${trackItemClass}`}
         id="track"
         ref={track}
       >
