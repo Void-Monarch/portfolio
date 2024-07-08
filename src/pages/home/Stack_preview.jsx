@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
-import Tag_glow_button from "../../components/Tag_glow_button";
 import { useEffect, useRef } from "react";
 import anime from "animejs";
 import { useInView } from "react-intersection-observer";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 
+import Tag_glow_button from "../../components/Tag_glow_button";
+import Custom_Carousel from "../../components/Carousel_home";
+
+// pics import here
 import jslogo from "../../assets/JavaScript-logo.png";
 import pylogo from "../../assets/Python_icon.png";
 import reactlogo from "../../assets/react-icon.png";
@@ -15,6 +16,11 @@ import tailwindlogo from "../../assets/tailwindlogo.jpg";
 import mongoDBlogo from "../../assets/mongologo.png";
 import dockerlogo from "../../assets/dockerlogo.png";
 import nodelogo from "../../assets/nodejs.jpg";
+import sqllogo from "../../assets/mySQLlogo.png";
+import djangologo from "../../assets/djangologo.png";
+import tslogo from "../../assets/Typescript_logo.png";
+
+// import ends
 
 export default function Stack_preview() {
   const lines = useRef(null);
@@ -52,37 +58,16 @@ export default function Stack_preview() {
     }
   }, [inView]);
 
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      partialVisibilityGutter: 30,
-      slidesToSlide: 1, // optional, default to 1.
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      partialVisibilityGutter: 30,
-      slidesToSlide: 2, // optional, default to 1.
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      partialVisibilityGutter: 30,
-      slidesToSlide: 1, // optional, default to 1.
-    },
-  };
-
   return (
     <div
       className="stack_preview_div flex w-full justify-center opacity-0 sm:mx-auto sm:max-w-[100rem]"
       ref={ref}
     >
-      <div className="m-0 flex w-full flex-col sm:w-[46.5%]">
+      <div className="m-0 flex w-full flex-col sm:w-[60%]">
         <div className="font-RobotoCondensed text-white">
           <h2 className="flex w-full flex-row justify-between text-nowrap">
-            <div className="w-[40%] overflow-hidden sm:w-[30%]">
-              <span className="font-RobotoCondensed text-3xl sm:text-4xl">
+            <div className="w-[40%] overflow-hidden sm:w-[30%] md:w-[35%]">
+              <span className="font-RobotoCondensed text-xl sm:text-4xl md:text-3xl">
                 TECH STACK
               </span>
             </div>
@@ -97,21 +82,13 @@ export default function Stack_preview() {
             </div>
           </h2>
 
-          <Carousel
-            responsive={responsive}
-            infinite={true}
-            swipeable={true}
-            draggable={true}
-            removeArrowOnDeviceType={["tablet", "mobile"]}
-            className="my-10"
-            autoPlay={true}
-            // partialVisible={true}
-            autoPlaySpeed={1500}
-            centerMode={true}
-            arrows={false}
-            customTransition="transition-all  duration-700"
-            itemClass="rounded-xl p-5"
-            transitionDuration={500}
+          {/* <Carosuel_home /> */}
+          <Custom_Carousel
+            animationDuration={25000}
+            animeEasing="linear"
+            wrapperClass="my-10"
+            trackClass=""
+            itemClass="p-5"
           >
             <div className="item text-center">
               <img
@@ -120,6 +97,14 @@ export default function Stack_preview() {
                 className="aspect-square rounded-xl object-cover"
               />
               <h5>JavaScript</h5>
+            </div>
+            <div className="item text-center">
+              <img
+                src={tslogo}
+                alt="Image"
+                className="aspect-square rounded-xl object-cover"
+              />
+              <h5>TypeScript</h5>
             </div>
             <div className="item text-center">
               <img
@@ -185,7 +170,23 @@ export default function Stack_preview() {
               />
               <h5>NodeJS</h5>
             </div>
-          </Carousel>
+            <div className="item text-center">
+              <img
+                src={sqllogo}
+                alt="Image"
+                className="aspect-square rounded-xl object-cover"
+              />
+              <h5>MySQL</h5>
+            </div>
+            <div className="item text-center">
+              <img
+                src={djangologo}
+                alt="Image"
+                className="aspect-square rounded-xl object-cover"
+              />
+              <h5>Django</h5>
+            </div>
+          </Custom_Carousel>
 
           <Link to="/techstack">
             <Tag_glow_button text="MORE" className="max-w-80" />
