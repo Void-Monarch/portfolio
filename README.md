@@ -2,20 +2,20 @@
 
 Welcome to my portfolio website! This project is built using [React](https://reactjs.org/) and [Vite](https://vitejs.dev/), providing a fast, modern, and efficient development experience.
 
-## 🚀 Features
+## Design Inspiration 
 
-- **Responsive Design**: Optimized for both desktop and mobile devices.
-- **Fast Loading**: Leveraging Vite's build speed and hot module replacement.
-- **SEO Friendly**: Pre-rendering and metadata support for better search engine indexing.
-- **Dynamic Content**: Easily update content through configuration files or content management.
+The Design idea for this website comes from [Yoasobi Website](https://www.yoasobi-music.jp/) . Yaosobi is a 2 person japaneese music band that I really like. I decided to borrow their website design for my porfolio
 
 ## 🎨 Preview
 
-![Portfolio Preview](link-to-screenshot-or-demo.gif)
+[Portfolio Preview](https://voidmonarch.vercel.app/)
+
 
 ## 🛠️ Installation
 
-Before starting, ensure you have [Node.js](https://nodejs.org/en/download/) installed.
+To build or run this project locally follow the installation process:
+
+Before starting, ensure you have [Node.js](https://nodejs.org/en/download/) or [Bun](https://bun.sh/) installed.
 
 1. **Clone the repository**:
 
@@ -35,6 +35,8 @@ Before starting, ensure you have [Node.js](https://nodejs.org/en/download/) inst
     npm install
     # or
     yarn install
+    # or
+    bun install
     ```
 
 ## 🌐 Development
@@ -45,4 +47,21 @@ Start the development server:
 npm run dev
 # or
 yarn dev
+# or
+bun run dev
+```
+
+## 📷 Screenshot
+
+### Destop View
+
+![image](https://github.com/Void-Monarch/portfolio/assets/102967317/bee91d73-0f62-4937-9db6-9fa1b8ddb75d)
+
+![image](https://github.com/Void-Monarch/portfolio/assets/102967317/9c989c3e-5a6b-4162-9b91-80cadbf29969)
+
+### Mobile view
+
+![image](https://github.com/Void-Monarch/portfolio/assets/102967317/fbfbd6d9-f35a-4de8-8777-2aa6e0852874)
+
+![image](https://github.com/Void-Monarch/portfolio/assets/102967317/f743ac60-39ac-4da0-b80c-bea9e22aa267)
 
