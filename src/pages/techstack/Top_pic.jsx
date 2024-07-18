@@ -16,7 +16,7 @@ export default function Top_pic() {
 
   return (
     <div id="top_pic_profile" className="relative min-w-fit" ref={pic}>
-      <img src={main_pic} className="max-w-[90vw] rounded-sm sm:max-w-[70vw]" />
+      <img src={main_pic} className="max-w-[90vw] rounded-sm sm:max-w-[70vw] sm:max-h-128" />
     </div>
   );
 }

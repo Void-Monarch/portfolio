@@ -1,7 +1,7 @@
 import anime from "animejs";
 import { useEffect, useRef } from "react";
 
-export default function Heading_profile() {
+export default function Heading_profile( prop ) {
   const lines = useRef(null);
   const heading = useRef(null);
 
@@ -25,9 +25,9 @@ export default function Heading_profile() {
   return (
     <>
       <div className="flex justify-center font-impact text-white">
-        <h1 className="flex w-full md:max-w-[75vw] flex-row justify-center text-3xl sm:text-5xl lg:text-7xl">
+        <h1 className="flex w-full flex-row justify-center text-3xl sm:text-5xl md:max-w-[75vw] lg:text-7xl">
           <div className="w-[30%]" ref={heading}>
-            <span className="">PROFILE</span>
+            <span className="">{prop.text}</span>
           </div>
           <div className="relative w-[65%]">
             <div className="lines" ref={lines}>
