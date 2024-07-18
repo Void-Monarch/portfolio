@@ -23,7 +23,7 @@ export default function Content_profile() {
     >
       <div>
         <div>
-          Hi there! I'm a Harsh Parashar aka <span>VoidMonarch </span>
+          Hi there! I am a Harsh Parashar aka <span>VoidMonarch </span>
           on github.
         </div>
         <br />
@@ -41,7 +41,7 @@ export default function Content_profile() {
         <br />
         Would love to connect with you, feel free to reach out to me on my
         socials.
-        <Link to="/techstack">
+        <Link to="/contact">
           <Tag_glow_button text="SOCIALS" className="sm:max-w-56" />
         </Link>
       </div>

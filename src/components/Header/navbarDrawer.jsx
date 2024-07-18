@@ -17,7 +17,6 @@ export default function NavDrawer() {
 
   useEffect(() => {
     if (isOpen) {
-      
       setIsDrawerOpen(true);
       anime({
         targets: monarchRef.current,
@@ -36,7 +35,6 @@ export default function NavDrawer() {
     }
 
     if (!isOpen) {
-      
       monarchRef.current.classList.remove("monarch-bg-pic");
       const t1 = anime.timeline({
         duration: 800,
@@ -69,7 +67,7 @@ export default function NavDrawer() {
       </div>
 
       <div
-        className={`fixed  left-0 top-0 z-40 h-dvh w-screen translate-x-[-100%] overflow-hidden bg-black ${isDrawerOpen ? "flex" : "hidden"}`}
+        className={`fixed left-0 top-0 z-40 h-dvh w-screen translate-x-[-100%] overflow-hidden bg-black ${isDrawerOpen ? "flex" : "hidden"}`}
         ref={NavDrawerRef}
       >
         <StarBg />
@@ -88,31 +86,31 @@ export default function NavDrawer() {
             <div className="relative md:w-[650px] md:pt-[40px]">
               <ul className="menuItems flex flex-col justify-around font-RobotoCondensed text-4xl *:relative *:my-8">
                 <li className="my-4 cursor-pointer hover:text-mainpinkog">
-                  <Link to="/">
+                  <Link to="/profile" onClick={() => setIsOpen(false)}>
                     <span className="relative z-10 bg-black pr-2">PROFILE</span>
                   </Link>
                 </li>
                 <li className="my-4 cursor-pointer hover:text-mainpinkog">
-                  <Link to="/techstack">
+                  <Link to="/techstack" onClick={() => setIsOpen(false)}>
                     <span className="relative z-10 bg-black pr-2">
                       TECH STACK
                     </span>
                   </Link>
                 </li>
                 <li className="my-4 cursor-pointer hover:text-mainpinkog">
-                  <Link to="/projects">
+                  <Link to="/projects" onClick={() => setIsOpen(false)}>
                     <span className="relative z-10 bg-black pr-2">
                       PROJECTS
                     </span>
                   </Link>
                 </li>
                 <li className="my-4 cursor-pointer hover:text-mainpinkog">
-                  <Link to="/contact">
+                  <Link to="/contact" onClick={() => setIsOpen(false)}>
                     <span className="relative z-10 bg-black pr-2">CONTACT</span>
                   </Link>
                 </li>
                 <li className="my-4 cursor-pointer hover:text-mainpinkog">
-                  <Link to="/hobbies">
+                  <Link to="/hobbies" onClick={() => setIsOpen(false)}>
                     <span className="relative z-10 bg-black pr-2">HOBBIES</span>
                   </Link>
                 </li>
