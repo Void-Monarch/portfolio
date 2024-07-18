@@ -3,6 +3,7 @@
 
 import { memo, useEffect, useRef, useState } from "react";
 import anime from "animejs";
+import classNames from "classnames";
 
 export default memo(function Custom_Carousel({
   children,
@@ -63,19 +64,19 @@ export default memo(function Custom_Carousel({
     });
   }, [totalItems, cloned, animationDuration, animationEasing]);
 
-  const trackItemClass = `${itemClassC} ${trackClassC}`;
+  const trackclassnames = classNames(
+    `flex flex-row *:flex *:flex-col xss:*:has-[img]:first:size-[16vh] sm:*:has-[img]:first:size-[15vh] md:*:has-[img]:first:size-[15vw] lg:*:has-[img]:first:size-[15vw] xl:*:has-[img]:first:size-[10vw]`,
+    itemClassC,
+    trackClassC,
+  );
 
   return (
     <div
-      className={"flex overflow-hidden " + wrapperClassC}
+      className={`flex overflow-hidden ${wrapperClassC}`}
       id="wrapper"
       ref={wrapper}
     >
-      <div
-        className={`flex flex-row *:flex *:flex-col xss:*:has-[img]:first:size-[16vh] sm:*:has-[img]:first:size-[15vh] md:*:has-[img]:first:size-[15vw] lg:*:has-[img]:first:size-[15vw] xl:*:has-[img]:first:size-[10vw] ${trackItemClass}`}
-        id="track"
-        ref={track}
-      >
+      <div className={`${trackclassnames}`} id="track" ref={track}>
         {children}
       </div>
     </div>
