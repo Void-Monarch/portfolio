@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import main_pic from "../../assets/developer.webp";
+import main_pic from "../../assets/25860683_7081471.png";
 import anime from "animejs";
 
 export default function Top_pic() {
