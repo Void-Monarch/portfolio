@@ -44,10 +44,10 @@ export default function Content_stack() {
   }, [lang, frame, data]);
 
   return (
-    <div className="m-0 flex flex-col pl-1 pt-10 font-RobotoCondensed text-xl text-white sm:pl-0 md:w-[70vw] md:max-w-[72vw]">
+    <div className="m-0 flex flex-col pl-1 pt-10 font-RobotoCondensed text-xl text-white xss:w-[75vw] sm:pl-0 md:w-[70vw] md:max-w-[72vw]">
       <div className="flex w-full flex-col" ref={lang}>
         <div className="pb-10 font-impact text-3xl">Languages</div>
-        <div className="flex flex-row justify-evenly *:*:size-20">
+        <div className="flex flex-row justify-evenly xss:pb-10 xss:*:*:size-24 md:pb-0 md:*:*:size-24">
           <div className="item text-center">
             <img
               src={jslogo}
@@ -101,7 +101,7 @@ export default function Content_stack() {
 
       <div className="flex w-full flex-col" ref={frame}>
         <div className="pb-10 font-impact text-3xl">FrameWorks</div>
-        <div className="flex flex-row justify-evenly *:*:size-20">
+        <div className="flex flex-row justify-evenly *:*:size-24">
           <div className="item text-center">
             <img
               src={reactlogo}
@@ -147,7 +147,7 @@ export default function Content_stack() {
 
       <div className="flex w-full flex-col" ref={data}>
         <div className="pb-10 font-impact text-3xl">Databases</div>
-        <div className="flex flex-row justify-evenly *:*:size-20">
+        <div className="flex flex-row justify-evenly *:*:size-24">
           <div className="item text-center">
             <img
               src={sqllogo}

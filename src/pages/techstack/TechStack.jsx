@@ -1,6 +1,7 @@
 import Top_pic from "./Top_pic";
 import Heading_component from "../../components/Heading_component";
 import Content_stack from "./Content_stack";
+import Content_stack_copy from "./Content_stack copy"
 
 export default function TechStack() {
   return (
@@ -10,7 +11,8 @@ export default function TechStack() {
       </div>
       <Heading_component text="TECH STACK"/>
       <div className="flex justify-center">
-        <Content_stack />
+        { window.innerWidth <=650 ? <Content_stack_copy /> : <Content_stack /> }
+        
       </div>
     </div>
   );
