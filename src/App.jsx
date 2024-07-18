@@ -3,11 +3,13 @@ import AppLayout from "./components/AppLayout";
 import Home from "./pages/home/Home";
 import Profile from "./pages/profile/Profile";
 import TechStack from "./pages/techstack/TechStack";
+import Contact from "./pages/contact/Contact";
+import Error from "./components/Error";
 
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
-    // errorElement: ,
+    errorElement: <Error /> ,
 
     children: [
       {
@@ -21,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/techstack",
         element: <TechStack />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

@@ -6,8 +6,8 @@ import pylogo from "../../assets/Python_icon.png";
 import rustlogo from "../../assets/rustlogo.webp";
 import csharp from "../../assets/Csharp_Logo.png";
 import javalogo from "../../assets/Java-Logo.png";
-import sqllite from "../../assets/sqllitelogo.png"
-import prostgresslogo from "../../assets/prostgresslogo.png"
+import sqllite from "../../assets/sqllitelogo.png";
+import prostgresslogo from "../../assets/prostgresslogo.png";
 import reactlogo from "../../assets/react-icon.png";
 import nextlogo from "../../assets/nextlogo.webp";
 import tailwindlogo from "../../assets/tailwindlogo.jpg";
@@ -18,24 +18,34 @@ import djangologo from "../../assets/djangologo.png";
 import tslogo from "../../assets/Typescript_logo.png";
 
 export default function Content_stack() {
-  const main = useRef(null);
+  const lang = useRef(null);
+  const frame = useRef(null);
+  const data = useRef(null);
 
   useEffect(() => {
-    anime({
-      targets: main.current,
-      opacity: [0, 1],
-      delay: 1200,
-      duration: 1000,
+    let t1 = anime.timeline({
       easing: "easeInOutQuad",
+      duration: 1000,
     });
-  }, []);
+
+    t1.add({
+      targets: lang.current,
+      delay: 1000,
+      opacity: [0, 1],
+    })
+      .add({
+        targets: frame.current,
+        opacity: [0, 1],
+      })
+      .add({
+        targets: data.current,
+        opacity: [0, 1],
+      });
+  }, [lang, frame, data]);
 
   return (
-    <div
-      className="m-0 flex flex-col pl-1 pt-10 font-RobotoCondensed text-xl text-white sm:pl-0 md:w-[70vw] md:max-w-[72vw]"
-      ref={main}
-    >
-      <div className="flex w-full flex-col">
+    <div className="m-0 flex flex-col pl-1 pt-10 font-RobotoCondensed text-xl text-white sm:pl-0 md:w-[70vw] md:max-w-[72vw]">
+      <div className="flex w-full flex-col" ref={lang}>
         <div className="pb-10 font-impact text-3xl">Languages</div>
         <div className="flex flex-row justify-evenly *:*:size-20">
           <div className="item text-center">
@@ -88,7 +98,8 @@ export default function Content_stack() {
           </div>
         </div>
       </div>
-      <div className="flex w-full flex-col">
+
+      <div className="flex w-full flex-col" ref={frame}>
         <div className="pb-10 font-impact text-3xl">FrameWorks</div>
         <div className="flex flex-row justify-evenly *:*:size-20">
           <div className="item text-center">
@@ -133,7 +144,8 @@ export default function Content_stack() {
           </div>
         </div>
       </div>
-      <div className="flex w-full flex-col">
+
+      <div className="flex w-full flex-col" ref={data}>
         <div className="pb-10 font-impact text-3xl">Databases</div>
         <div className="flex flex-row justify-evenly *:*:size-20">
           <div className="item text-center">
