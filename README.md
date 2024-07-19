@@ -6,6 +6,18 @@ Welcome to my portfolio website! This project is built using [React](https://rea
 
 The Design idea for this website comes from [Yoasobi Website](https://www.yoasobi-music.jp/) . Yaosobi is a 2 person japaneese music band that I really like. I decided to borrow their website design for my porfolio
 
+## Technologies Used
+
+> - Vite + React : 18.3.3
+> - Tailwind CSS : v3
+> - animeJs : v3
+-----
+
+- This being a Static website with no need for backend , made React a clear choice over Nextjs. 
+- AnimeJs was used to animate various aspects of the website.
+- TailWind CSS has been my go to styling option ever since starting web development , so it was a clear choice to use it.
+
+
 ## 🎨 Preview
 
 [Portfolio Preview](https://voidmonarch.vercel.app/)
