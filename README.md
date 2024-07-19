@@ -6,6 +6,13 @@ Welcome to my portfolio website! This project is built using [React](https://rea
 
 The Design idea for this website comes from [Yoasobi Website](https://www.yoasobi-music.jp/) . Yaosobi is a 2 person japaneese music band that I really like. I decided to borrow their website design for my porfolio
 
+## Technologies Used
+
+> Vite + React : 18.3.3
+> Tailwind CSS : v3
+> animeJs : v3
+
+
 ## 🎨 Preview
 
 [Portfolio Preview](https://voidmonarch.vercel.app/)
