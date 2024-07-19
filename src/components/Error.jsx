@@ -19,9 +19,10 @@ export default function Error() {
 
   return (
     <div className="flex flex-col justify-center pt-52 sm:pt-20">
-      <img src={error404} className="h-56 sm:h-112" ref={er404} />
+      <div className="h-56 sm:h-112">
+        <img src={error404} className="h-56 sm:h-112" ref={er404} />
+      </div>
 
-      <br />
       <div className="*:max-w-48">
         <Link to={"/"}>
           <Tag_glow_button text="HOME" className="w-48" />
