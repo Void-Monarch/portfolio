@@ -188,7 +188,12 @@ export default function Stack_preview() {
             </div>
           </Custom_Carousel>
 
-          <Link to="/techstack">
+          <Link
+            to="/techstack"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
             <Tag_glow_button text="MORE" className="max-w-80" />
           </Link>
         </div>

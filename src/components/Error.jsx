@@ -23,7 +23,7 @@ export default function Error() {
 
       <br />
       <Link to={"/"}>
-        <Tag_glow_button text="HOME" className="w-56" />
+        <Tag_glow_button text="HOME" className="w-52" />
       </Link>
     </div>
   );

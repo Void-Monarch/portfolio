@@ -16,13 +16,18 @@ export default function Profile_tag() {
   }, []);
   return (
     <div className="mt-0 flex w-full justify-center sm:mt-28">
-      <Link to="/profile">
+      <Link
+        to="/profile"
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
         <div
           className="relative flex w-[65vw] justify-center border border-solid border-white py-4 opacity-0 hover:border-mainpinkog *:hover:text-mainpinkog sm:w-52 sm:py-3"
           id="profiletag"
           ref={profiletagRef}
         >
-          <span className="items-center font-RobotoCondensed text-lg sm:text-sm text-white">
+          <span className="items-center font-RobotoCondensed text-lg text-white sm:text-sm">
             PROFILE
           </span>
         </div>

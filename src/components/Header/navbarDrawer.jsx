@@ -86,31 +86,61 @@ export default function NavDrawer() {
             <div className="relative md:w-[650px] md:pt-[40px]">
               <ul className="menuItems flex flex-col justify-around font-RobotoCondensed text-4xl *:relative *:my-8">
                 <li className="my-4 cursor-pointer hover:text-mainpinkog">
-                  <Link to="/profile" onClick={() => setIsOpen(false)}>
+                  <Link
+                    to="/profile"
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                      return setIsOpen(false);
+                    }}
+                  >
                     <span className="relative z-10 bg-black pr-2">PROFILE</span>
                   </Link>
                 </li>
                 <li className="my-4 cursor-pointer hover:text-mainpinkog">
-                  <Link to="/techstack" onClick={() => setIsOpen(false)}>
+                  <Link
+                    to="/techstack"
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                      return setIsOpen(false);
+                    }}
+                  >
                     <span className="relative z-10 bg-black pr-2">
                       TECH STACK
                     </span>
                   </Link>
                 </li>
                 <li className="my-4 cursor-pointer hover:text-mainpinkog">
-                  <Link to="/projects" onClick={() => setIsOpen(false)}>
+                  <Link
+                    to="/projects"
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                      return setIsOpen(false);
+                    }}
+                  >
                     <span className="relative z-10 bg-black pr-2">
                       PROJECTS
                     </span>
                   </Link>
                 </li>
                 <li className="my-4 cursor-pointer hover:text-mainpinkog">
-                  <Link to="/contact" onClick={() => setIsOpen(false)}>
+                  <Link
+                    to="/contact"
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                      return setIsOpen(false);
+                    }}
+                  >
                     <span className="relative z-10 bg-black pr-2">CONTACT</span>
                   </Link>
                 </li>
                 <li className="my-4 cursor-pointer hover:text-mainpinkog">
-                  <Link to="/hobbies" onClick={() => setIsOpen(false)}>
+                  <Link
+                    to="/hobbies"
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                      return setIsOpen(false);
+                    }}
+                  >
                     <span className="relative z-10 bg-black pr-2">HOBBIES</span>
                   </Link>
                 </li>

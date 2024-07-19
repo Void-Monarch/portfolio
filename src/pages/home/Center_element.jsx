@@ -14,7 +14,7 @@ import light_novel from "../../assets/light_novel.jpg";
 
 export default function Center_element() {
   const [ref, inView] = useInView({
-    threshold: 0.10,
+    threshold: 0.1,
   });
 
   useEffect(() => {
@@ -36,7 +36,7 @@ export default function Center_element() {
 
   return (
     <div
-      className="mt-40 flex w-full flex-col justify-between pt-10 opacity-0 *:mb-10 sm:mx-auto sm:max-w-256 sm:flex-row mb-20"
+      className="mb-20 mt-40 flex w-full flex-col justify-between pt-10 opacity-0 *:mb-10 sm:mx-auto sm:max-w-256 sm:flex-row"
       id="center-element"
       ref={ref}
     >
@@ -120,7 +120,7 @@ export default function Center_element() {
               </div>
             </div>
           </ul>
-          <Link to="https://github.com/Void-Monarch?tab=repositories">
+          <Link to="https://github.com/Void-Monarch?tab=repositories" target="_blank">
             <Tag_glow_button text="MORE" />
           </Link>
         </div>
@@ -207,7 +207,14 @@ export default function Center_element() {
               </div>
             </div>
           </ul>
-          <Tag_glow_button text="MORE" />
+          <Link
+            to="/hobbies"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
+            <Tag_glow_button text="MORE" />
+          </Link>
         </div>
       </div>
     </div>
