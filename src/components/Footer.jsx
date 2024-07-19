@@ -1,3 +1,7 @@
 export default function Footer() {
-  return <div className="bg-[#282828] py-5 text-white font-RobotoCondensed justify-center flex">Void Monarch</div>;
+  return (
+    <div className="flex justify-center bg-[#282828] py-5 font-RobotoCondensed text-white">
+      Void Monarch
+    </div>
+  );
 }

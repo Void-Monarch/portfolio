@@ -120,7 +120,7 @@ export default function Center_element() {
               </div>
             </div>
           </ul>
-          <Link to="https://github.com/Void-Monarch?tab=repositories" target="_blank">
+          <Link to="/projects" onClick={()=>{window.scrollTo(0,0)}}>
             <Tag_glow_button text="MORE" />
           </Link>
         </div>

@@ -5,6 +5,7 @@ import Profile from "./pages/profile/Profile";
 import TechStack from "./pages/techstack/TechStack";
 import Contact from "./pages/contact/Contact";
 import Error from "./components/Error";
+import Project from "./pages/project/Project";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/projects",
+        element: <Project />,
       },
     ],
   },
