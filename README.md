@@ -8,9 +8,9 @@ The Design idea for this website comes from [Yoasobi Website](https://www.yoasob
 
 ## Technologies Used
 
-> Vite + React : 18.3.3
-> Tailwind CSS : v3
-> animeJs : v3
+> - Vite + React : 18.3.3
+> - Tailwind CSS : v3
+> - animeJs : v3
 
 
 ## 🎨 Preview
