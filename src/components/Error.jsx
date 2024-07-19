@@ -19,7 +19,7 @@ export default function Error() {
 
   return (
     <div className="flex flex-col justify-center pt-52 sm:pt-20">
-      <div className="h-56 sm:h-112">
+      <div className="h-56 sm:h-112 flex justify-center">
         <img src={error404} className="h-56 sm:h-112" ref={er404} />
       </div>
 
