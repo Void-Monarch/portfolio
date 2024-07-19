@@ -13,8 +13,9 @@ The Design idea for this website comes from [Yoasobi Website](https://www.yoasob
 > - animeJs : v3
 -----
 
+- This being a Static website with no need for backend , made React a clear choice over Nextjs. 
 - AnimeJs was used to animate various aspects of the website.
-- TailWind CSS has been my go to styling option ever since starting web development 
+- TailWind CSS has been my go to styling option ever since starting web development , so it was a clear choice to use it.
 
 
 ## 🎨 Preview
