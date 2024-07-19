@@ -11,6 +11,10 @@ The Design idea for this website comes from [Yoasobi Website](https://www.yoasob
 > - Vite + React : 18.3.3
 > - Tailwind CSS : v3
 > - animeJs : v3
+-----
+
+AnimeJs was used to animate various aspects of the website.
+TailWind CSS has been my go to styling option ever since starting web development 
 
 
 ## 🎨 Preview
