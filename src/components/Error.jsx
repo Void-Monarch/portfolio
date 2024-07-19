@@ -19,7 +19,11 @@ export default function Error() {
 
   return (
     <div className="flex flex-col justify-center pt-52 sm:pt-20">
-      <img src={error404} className="h-56 select-none sm:h-112" ref={er404} />
+      <img
+        src={error404}
+        className="h-56 select-none sm:h-112 sm:w-full"
+        ref={er404}
+      />
 
       <br />
       <Link to={"/"}>
