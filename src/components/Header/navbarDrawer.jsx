@@ -135,13 +135,13 @@ export default function NavDrawer() {
                 </li>
                 <li className="my-4 cursor-pointer hover:text-mainpinkog">
                   <Link
-                    to="/hobbies"
+                    to="/thisWebsite"
                     onClick={() => {
                       window.scrollTo(0, 0);
                       return setIsOpen(false);
                     }}
                   >
-                    <span className="relative z-10 bg-black pr-2">HOBBIES</span>
+                    <span className="relative z-10 bg-black pr-2">THIS WEBSITE</span>
                   </Link>
                 </li>
               </ul>

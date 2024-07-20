@@ -1,5 +1,5 @@
 import Heading_component from "../../components/Heading_component";
-import Content_profile from "./Content_project";
+import Content_project from "./Content_project";
 import Top_pic from "./Top_pic";
 
 export default function Project() {
@@ -10,7 +10,7 @@ export default function Project() {
       </div>
       <Heading_component text="PROJECTS" />
       <div className="flex justify-center">
-        <Content_profile />
+        <Content_project />
       </div>
    </div>
   );

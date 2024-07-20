@@ -144,7 +144,7 @@ export default function Content_profile() {
         </div>
       </div>
 
-      <div className="*:max-w-48 pb-5">
+      <div className="justify-center pb-5">
         <Link
           to="https://github.com/Void-Monarch?tab=repositories"
           target="_blank"
